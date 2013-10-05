@@ -1,0 +1,132 @@
+/*
+Theme Name: TravelAlone
+Theme URI: http://
+Description: 這是一個關於旅行記錄的主題佈景。目前尚未支援RWD，希望下一個版本可以達到。支援外掛Breadcrumb NavXT(麵包屑導覽)，建議下載安裝。
+Author: noofy
+Author URI: http://www.cgdw19.com
+Version: 1.0
+Tags: white, two-columns, travel theme
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400); 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, dl, dt, dd, fieldset, form, label, legend, center, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+
+body { font:11pt "微軟正黑體",Arial;}
+
+.space { clear:both; height:20px; display:block;}
+
+#TA_allbox { width:1000px; background:url(images/TA_main_bg.gif) repeat; margin:0 auto;}
+
+/* header */
+.headerbox { width:970px; height:240px; margin:0 auto; overflow:hidden;}
+.imgheader { position:absolute; margin-left:0px; margin-top:0px; width:970px; height:240px; overflow:hidden;}
+h1 { font:26pt "微軟正黑體",Arial; font-weight:bold; color:#960;}
+h1 a { color:#000; text-decoration:none; color:#960;}
+h1 a:hover { color:#000; text-decoration:underline; color:#960;}
+h2 { font:20pt "微軟正黑體",Arial;}
+h3 { font:16pt "微軟正黑體",Arial;}
+h3 a { color:#930; text-decoration:none;}
+h3 a:hover { color:#930; text-decoration:underline;}
+h4 { font:10pt "微軟正黑體",Arial; color:#960;}
+header .title { width:500px; position:absolute; margin-top:55px; margin-left:300px;}
+.subtitle { font:13pt "微軟正黑體",Arial;}
+
+.clearfix{*zoom:1;} 
+.clearfix:before, .clearfix:after{display:table;content:"";line-height:0;} 
+.clearfix:after{clear:both;}
+
+#header-main-nav { width:945px; margin:0 auto;}
+.alignleft { font:13pt "微軟正黑體",Arial; text-align:left;}
+.widecol { padding:0 0 12px 0; background:url(images/nav_bg.png) repeat; border:2px dashed #fff; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -moz-box-shadow:0 0 0 4px #960, 2px 1px 4px 4px rgba(10,10,0,.5); -webkit-box-shadow:0 0 0 4px #960, 2px 1px 4px 4px rgba(10,10,0,.5); box-shadow:0 0 0 4px #960, 2px 1px 6px 4px rgba(10,10,0,.5);}
+#header-main-nav ul { list-style:none;}
+#header-main-nav ul li { padding:0 10px 0 10px; margin:0; list-style:none; float:left;}
+#header-main-nav ul li a { color:#fff; text-shadow:-1px -1px #aa3030; text-decoration:none;}
+#header-main-nav ul li a:hover { color:#FF0; text-shadow:-1px -1px #aa3030; text-decoration:none;}
+
+/* content */
+#mainbox { width:955px; margin:0 auto;}
+
+#contentbox { width:755px; float:left;}
+section { padding:15px; font:11pt "微軟正黑體",Arial; line-height:1.8em;}
+p .small { font:8pt "微軟正黑體",Arial; color:#000;}
+p .small a { color:#000; text-decoration:none;}
+p .small a:hover { color:#000; text-decoration:underline;}
+.contentstyle { font:11pt "微軟正黑體",Arial; line-height:2.2em; color:#000;}
+.contentstyle a { color:#000; border-bottom:1px #000000 dashed; text-decoration:none;}
+.contentstyle a:hover { color:#000; border-bottom:1px #000000 dashed; text-decoration:none;}
+.maincontent { width:221px; height:280px; padding:10px; float:left; overflow:hidden;} /* article (main) */
+.searchcontent { width:221px; padding:10px;} /* article (search) */
+.tagline { font:10pt "微軟正黑體",Arial; color:#666; padding:15px; background:#ECECEC;}
+
+/* paginate */
+.paginate { clear:both;}
+.paginate ul { padding:0; margin:0; list-style:none;}
+.page-numbers { font:8pt "微軟正黑體",Arial; color:#000;}
+.paginate ul li { padding:4px; margin:4px; border:1px #666666 solid; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; float:left;}
+.paginate ul li a { color:#960; text-decoration:none;}
+.paginate ul li a:hover { color:#000; text-decoration:none;}
+
+/* page */
+.postpage { font:11pt "微軟正黑體",Arial; color:#666; background:#CCC;}
+.postpage ul { padding:0; margin:0; list-style:none; display:block;}
+.postpage ul li { padding:0 120px 0 120px; float:left;}
+.postpage ul li a { color:#666; text-decoration:none;}
+.postpage ul li a:hover { color:#666; text-decoration:underline;}
+
+/* breadcrumb */
+.breadcrumb { font:8pt "微軟正黑體",Arial; color:#666;}
+.breadcrumb a { color:#666; text-decoration:none;}
+.breadcrumb a:hover { color:#666; text-decoration:underline;}
+
+/* comments */
+.comment-list { padding:0; margin:0; list-style:none; display:block;}
+.comment-fn { font:10pt "微軟正黑體",Arial; color:#666;}
+.comment-fn a { color:#666; text-decoration:none;}
+.comment-fn a:hover { color:#666; text-decoration:underline;}
+.comment-meta { font:8pt "微軟正黑體",Arial; color:#666;}
+
+/* aside */
+#sidebarbox { width:200px; float:left;}
+#sidebar-main {}
+#sidebar-main .clear {}
+#sidebar-main .subnav {}
+
+/* dynamic sidebar */
+select, input, textarea { font:10pt "微軟正黑體",Arial; padding:5px; border:1px #996600 solid; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; background:#FFF; color:#960;}
+.widget { font:10pt "微軟正黑體",Arial; line-height:1.8em;} /*div*/
+.widget ul { padding-left:20px; margin:0;}
+.widget a { color:#666; text-decoration:none;}
+.widget a:hover { color:#666; text-decoration:underline;}
+.widgettitle { text-align:left; color:#930; line-height:3em; font-weight:bold;} /*h3*/
+.ltfooter { width:448px; padding:15px; float:left; font:10pt "微軟正黑體",Arial; line-height:1.8em;}
+.ltfooter a { color:#666; text-decoration:none;}
+.ltfooter a:hover { color:#666; text-decoration:underline;}
+.ltfooter ul { padding-left:20px; margin:0;}
+.rtfooter { width:447px; padding:15px; float:left; font:10pt "微軟正黑體",Arial; line-height:1.8em;}
+.rtfooter a { color:#666; text-decoration:none;}
+.rtfooter a:hover { color:#666; text-decoration:underline;}
+.rtfooter ul { padding-left:20px; margin:0;}
+
+/* calendar */
+#wp-calendar { width:100%;}
+#wp-calendar th { text-align:left;}
+#today { color:#930; font-weight:bold;}
+
+/* footer */
+#dwfooter { clear:both; width:955px; margin:0 auto; border-top:1px #996600 solid;}
+footer { clear:both; width:940px; padding:15px; margin:0 auto;}
+.copyright { height:50px; font:9pt "微軟正黑體",Arial ; text-align:center;}
