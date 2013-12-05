@@ -24,8 +24,8 @@
 <?php get_search_form(); ?><br /><br />
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 <article>
-<h3><a href="<?php the_permalink(); ?>" title="For More Info on <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-<p><span class="small">Posted <time datetime="<?php the_time('y-m-d'); ?>" pubdate="pubdate"><?php the_time('M n'); ?></time> &#149 <?php comments_number('0 comments','only 1 comment','% comments'); ?></span></p>
+<h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+<p><span class="small">Posted <time datetime="<?php the_time('y-m-d'); ?>" pubdate="pubdate"><?php the_time('Y-m-d'); ?></time> &#149 <?php comments_number('0 comments','only 1 comment','% comments'); ?></span></p>
 <?php the_excerpt(); ?>
 </article>
 <hr style="border:1px #ccc dashed;" />

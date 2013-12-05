@@ -24,7 +24,7 @@
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 <!-- titlepic --><?php the_post_thumbnail('page-featured-image'); ?>
 <!-- title --><h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-<!-- info --><p><span class="small">Posted <time datetime="<?php the_time('Y-m-d'); ?>" pubdate="pubdate"><?php the_time('M n'); ?></time> &#149 <a href="#comments"></a><?php comments_number('0 comments','only 1 comment','% comments'); ?></a></span></p><br />
+<!-- info --><p><span class="small">Posted <time datetime="<?php the_time('Y-m-d'); ?>" pubdate="pubdate"><?php the_time('Y-m-d'); ?></time> &#149 <a href="#comments"></a><?php comments_number('0 comments','only 1 comment','% comments'); ?></a></span></p><br />
 <!-- content --><div class="contentstyle"><?php the_content(); ?></div><br />
 <!-- category --><p><span class="small">分類：<?php the_category(', '); ?></span></p>
 <!-- tag list --><p><span class="small"><?php if(get_the_tags()) {the_tags();} ?></span></p>
